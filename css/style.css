@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+@font-face {
+    font-family: NunitoSansL;
+    src: url(../letras/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansR;
+    src: url(../letras/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansB;
+    src: url(../letras/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansEB;
+    src: url(../letras/NunitoSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansL;
+    src: url(../letras/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSansR;
+    src: url(../letras/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSansB;
+    src: url(../letras/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: ManropeSB;
+    src: url(../letras/Manrope-SemiBold.otf
+    );
+}
+@font-face {
+    font-family: MulishR;
+    src: url(../letras/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: OutfitB;
+    src: url(../letras/Outfit-Bold.ttf);
+}
+
+@font-face {
+    font-family: SoraB;
+    src: url(../letras/Sora-Bold.ttf);
+}
+
+@font-face {
+    font-family: WorkSansL;
+    src: url(../letras/WorkSans-Light.otf);
+}
+
+header {
+    position: sticky; 
+    top: 0;               
+    width: 100%;     
+    z-index: 1000;   
+    background-color: #2E2E2E; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box; 
+    
+}
+
+#logotipo{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%; 
+}
+
+#logotipo img{
+    max-width: 32%; 
+    height: auto;
+  
+}
+
+#main1-a, #main1-b, #main1-c {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    visibility: hidden;
+}
+
+
+#main1-a.visible, #main1-b.visible, #main1-c.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+#frase1, #frase2, #frase3{
+    padding-top: 13%;
+    padding-left: 15%;
+    padding-right: 10%;
+    font-family:WorkSansL ;
+    font-size: 150%;
+}
+
+#foto1, #foto2, #foto3{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+#foto1 img, #foto2 img, #foto3 img{
+    width: 70%;
+}
+
+#main2{
+   
+    text-align: center; 
+    background-color:white;
+    color: white;
+    
+}
+
+
+#col1-2,#col2-2,#col3-2,#col4-2{
+    padding-left:5% ;
+    padding-right:5% ;
+    padding-bottom: 10%;  
+    
+}
+
+#col1-2i,#col2-2i,#col3-2i,#col4-2i{
+    border: 1px solid #2E2E2E;
+    background-color: black; border-radius: 5px;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    
+}
+
+#main3{
+    text-align: center; 
+    background-color:white;
+    color:black;
+    
+   
+}
+
+#col1-3,#col2-3,#col3-3,#col4-3{
+     
+    padding-left:5% ;
+    padding-right:5% ;
+    padding-bottom: 10%; 
+    
+}
+
+#col1-3i,#col2-3i,#col3-3i,#col4-3i{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+   
+    
+}
+
+#h4main{
+    color: black;
+    font-family: ManropeSB ;
+    padding: 5%;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.7);
+    
+    
+}
+
+@keyframes pulseMain {
+    0% {
+        text-shadow: none; 
+    }
+    50% {
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        text-shadow: none; 
+    }
+}
+
+#h6main {
+    font-family: SoraB;
+    padding: 10%;
+    text-shadow: none;
+    animation: pulseMain 4s ease-in-out infinite; 
+}
+@keyframes pulseMain2 {
+    0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+#h6main2 {
+    font-family: SoraB;
+    padding: 10%;
+    color: black;
+    background-color: white;
+    text-shadow: none;
+    animation: pulseMain2 4s ease-in-out infinite; 
+}
+
+#pmain{
+    font-family:WorkSansL;
+    padding: 2%; 
+}
+
+#main4{
+    background-color:#2E2E2E;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    
+}
+
+#main4 img {
+    max-width: 100%; 
+    height: auto;    
+}
+
+footer{
+    padding-top: 2%;
+    background-color :#2E2E2E;
+ 
+}
+
+#midias1{
+    padding-top: 1%;
+    padding-left: 10%;
+
+}
+
+#midias1 img{
+    width: 6%;
+    margin-right: 2%;
+    
+}
+
+#pmidias1{
+    font-family: MulishR;
+    color:white;
+    transition: transform 0.5s ease-out; 
+    
+}
+
+#pmidias1:hover{
+    transform: scale(1.03); 
+    transition: transform 0.1s ease-in; 
+      
+}
+
+#midias2{
+    padding-left: 25%;
+
+}
+
+#midias2 img{
+    margin-right: 5%;
+    width: 10%;
+}
+
+#afacebook img, #ainstagram img, #agithub img{
+    transition: transform 0.5s ease-out; 
+}
+
+#afacebook img:hover, #ainstagram img:hover, #agithub img:hover {
+    transform: scale(1.2); 
+    transition: transform 0.1s ease-in; 
+}
+
+#produzidopor{
+    color: white;
+    font-family:WorkSansL;
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: 80%;
+   
+}
+
+#produzidopor hr {
+    margin: 10px auto;
+    width: 90%;
+
+}
+
+#empresa{
+    color: white;
+}
+
+#empresa:hover{
+    color: #ffac26;
+
+}
+
+@media (max-width: 767px) {
+    #main2 .col, #main3 .col {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+    #logotipo img{
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    #frase1 {
+        text-align: center;
+        font-family: WorkSansL;
+        font-size: 110%;
+    }
+
+    #frase2, #frase3{
+        padding-top: 15%;
+        text-align: center;
+        font-family: WorkSansL;
+        font-size: 110%;
+    }
+
+    #foto1, #foto2, #foto3{
+        padding-top: 8%;
+        padding-bottom: 18%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    #h4main{
+        
+        font-size: 120%;
+        
+    }
+    
+    #h6main{
+        font-family:SoraB ;
+        padding: 10%;  
+    }
+    #pmain{
+        font-family:WorkSansL;
+        padding: 2%;  
+    }
+    #main3{
+        padding-bottom: 70%;
+    }
+    #main4 img {
+        max-width: 100%; 
+        height:100px;  
+    }
+        
+    #pmidias1{
+        font-size: 70%;
+
+    }
+
+    #midias1 img{
+        width: 9%;
+
+    }
+
+    #midias2{
+        padding-left: 9%;
+    
+    }
+
+    #midias2 img{
+        margin-right: 7%;
+        width: 9%;
+    }
+
+    #produzidopor hr {
+        margin-top: -10px;
+        width: 90%;
+    
+    }
+    #produzidopor{
+        font-size: 60%;
+        padding-bottom: 2%;
+    }
+    
+    
+}
+
+@media (min-width: 1910px) {
+    
+    #foto1 img, #foto2 img, #foto3 img{
+        width: 60%; 
+    }
+            
+}
+
+
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
